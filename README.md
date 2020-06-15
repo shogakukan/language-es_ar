@@ -4,27 +4,18 @@ Magento2 Spanish (Argentina) language pack.
 
 ## Installation
 
-Use [composer](https://getcomposer.org/) to install Mugar_ArgentinaRegions.
+Use [composer](https://getcomposer.org/) to install Mugar Language-es_AR.
 
 ```
-composer require mugar/module-argentina-regions
+composer require mugar/language-es_arf
 ```
 
-Then you'll need to activate the module.
+Then you'll need to pack the translations.
 
 ```
-bin/magento module:enable Mugar_ArgentinaRegions
-bin/magento setup:upgrade
-bin/magento cache:clean
+bin/magento i18n:pack --mode=replace -d vendor/mugar/language-es_ar/es_ar.csv . es_AR
+bin/magento setup:static-content:deploy es_AR
 ```
-
-## Uninstall
-
-```
-bin/magento module:uninstall Mugar_ArgentinaRegions
-```
-
-If you used Composer for installation Magento will remove the files and database information. 
 
 ## Support
 
