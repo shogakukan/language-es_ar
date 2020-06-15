@@ -7,7 +7,7 @@ Magento2 Spanish (Argentina) language pack.
 Use [composer](https://getcomposer.org/) to install Mugar Language-es_AR.
 
 ```
-composer require mugar/language-es_arf
+composer require mugar/language-es_ar
 ```
 
 Then you'll need to pack the translations.
