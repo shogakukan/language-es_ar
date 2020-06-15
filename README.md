@@ -1,80 +1,40 @@
-# Magento2-language-es_ar
+# Mugar Language-es_AR for Magento2
 
-Magento2 Spanish (Argentina) language pack build from Crowdin community translation tool.
+Magento2 Spanish (Argentina) language pack.
 
-Paquete de idioma de Español (Argentina) construido a partir de la plataforma de traducciones de la comunidad Crowdin. 
+## Installation
 
-## Referencias
-
-* [Magento Devdocs](http://devdocs.magento.com/guides/v2.2/frontend-dev-guide/translations/xlate.html) - La críptica
-guía en la que me basé para armar el diccionario
-* [Crowdin](https://crowdin.com/project/magento-2/es-AR) - La herramienta de traducciones que se utiliza como fuente
-para este paquete
-
-## Getting Started
-
-Para construir el diccionario desde Crowdin, solo hace falta ejecutar el script `build.php` indicando la versión de
-Magento como parámetro
+Use [composer](https://getcomposer.org/) to install Mugar Language-es_AR.
 
 ```
-php build.php 2.2.1
-``` 
+composer require mugar/language-es_arf
+```
 
-### Prerequisitos
-
-El script utilizado para importar las traducciones desde Crowdin requiere las siguientes extensiones de PHP presentes
-
-* cUrl
-* Zip
-
-### Instalación
-
-Para agregar el paquete a una instalación de Magento 2, sólo hace falta hacerlo mediante composer indicando el número de
-versión de Magento 2
+Then you'll need to pack the translations.
 
 ```
-composer require semexpert/language-es_ar:2.1.8
-``` 
+bin/magento i18n:pack --mode=replace -d vendor/mugar/language-es_ar/es_ar.csv . es_AR
+bin/magento setup:static-content:deploy es_AR
+```
 
-### Contribuciones
+## Support
 
-El objetivo principal de este proyecto es fomentar el uso de Crowdin como plataforma para traducir Magento por parte de
-la comunidad. De esta manera podremos tener un paquete de idiomas mantenido lo más democráticamente posible. Por este
-motivo, no estaré aceptando PR que modifiquen el archivo `es_AR.csv` directamente. La mejor forma de contribuir al 
-mantenimiento de este paquete de idiomas es hacerlo directamente en Crowdin.
+You can request to be added to [Slack](https://mugar.slack.com/).
 
-Por otro lado, si aceptaré con gusto (y trataré de responder lo más diligentemente posible) a cualquier pedido de 
-regenerar el diccionario cuando hayan actualizaciones en Crowdin y republicarlo.
+## Contributing
 
-De la misma manera, todo PR para mejorar el script `build.php` o corregir bugs será más que bienvenido, agradecido y 
-atribuido.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Versioning
+Please make sure to update tests as appropriate.
 
-Usamos [SemVer](http://semver.org/) para el versionado. Para las versiones disponibles, mirá los
-[tags de este repositorio](https://github.com/SemExpert/Magento2-language-es_ar/tags). 
+### How to create a PR
 
-La numeración de las versiones es la misma que la de Magento para simplificar la instalación. Cada nuevo build del 
-diccionario contiene un identificado de pre-release con el número de build correspondiente a esa versión.
+1. Fork it
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Commit your changes (git commit -am 'Add some feature')
+4. Push to the branch (git push origin my-new-feature)
+5. Create new Pull Request
 
-Por ejemplo:
+## License
 
-* 2.1.8-1
-* 2.2.0-1
-* 2.2.0-2
-* 2.2.1-1
-* 2.2.1-2
-* 2.2.1-3
-
-Se aceptan sugerencias para mejorar este sistema de versionado.
-
-## Autores
-
-* **Matías Montes** - *Initial work* - [barbazul](https://github.com/barbazul/)
-
-También revisa la lista de [contribuyentes](https://github.com/SemExpert/Magento2-language-es_ar/contributors) que 
-participaron de este proyecto.
-
-## Licencia
-
-Este proyecto esta licenciado bajo MIT - mirá [LICENSE.md](LICENSE.md) más detalles.
+[MIT](https://choosealicense.com/licenses/mit/)

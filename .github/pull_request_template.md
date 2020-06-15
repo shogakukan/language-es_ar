@@ -16,7 +16,7 @@
 <!---
     Si aplica, agregar lista de issues relacionados.
 -->
-1. holamugar/Magento2-language-es_ar#<issue_number>: Título del Issue
+1. holamugar/language-es_ar#<issue_number>: Título del Issue
 2. ...
 
 ### Escenarios de testing manual (si fuera aplicable)
