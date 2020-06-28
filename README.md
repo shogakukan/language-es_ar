@@ -13,7 +13,7 @@ composer require mugar/language-es_ar
 Then you'll need to pack the translations.
 
 ```
-bin/magento i18n:pack --mode=replace -d vendor/mugar/language-es_ar/es_ar.csv . es_AR
+bin/magento i18n:pack --mode=replace -d vendor/mugar/language-es_ar/es_AR.csv es_AR
 bin/magento setup:static-content:deploy es_AR
 ```
 
