@@ -4195,7 +4195,7 @@ Identifier,Identificador,module,Magento_Cms
 "Identifying Fields required","Identificación de campos requeridos",module,Magento_Sales
 "Identity link URL","URL de enlace de identidad",module,Magento_Integration
 "Identity morphing. Multiple values of an  dentity element are linked to a value of a different identity element. For example, m ltiple phone numbers are linked to a single account number","Identidad morphing. Los valores múltiples de un elemento de identidad están vinculados a un valor de un elemento de identidad diferente. Por ejemplo, varios números de teléfono están vinculadas a un único número de cuenta",module,Magento_Cybersource
-"If %1 %2 %3 for a subselection of items in cart matching %4 of these conditions:","Si %s %s %s para una subselección de artículos en la cesta coincidiendo %s de estas condiciones:",module,Magento_SalesRule
+"If %1 %2 %3 for a subselection of items in cart matching %4 of these conditions:","Si %1 %2 %3 para una subselección de artículos en la cesta coincidiendo %4 de estas condiciones:",module,Magento_SalesRule
 "If %1 of these conditions are %2:","Si %1 de estas condiciones son %2:",module,Magento_Rule
 "If 0 is specified, CAPTCHA on the Login form will be always available.","Si se especifica 0, el CAPTCHA siempre estará disponible en el formulario de inicio de sesión.",module,Magento_Captcha
 "If Customer Address %1 State/Province specified","Si se especifica al cliente dirección %1 provincia",module,Magento_CustomerSegment
